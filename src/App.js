@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MovieProvider from './context/MovieContext';
+import MovieList from './components/MovieList';
+import MovieDetails from "./components/MovieDetails";
+import AddNewMovie from "./components/AddNewMovie";
+import Successfully from './components/Successfully';
+import EditMovie from "./components/EditMovie";
+import DeleteMovie from "./components/DeleteMovie";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MovieProvider>
+        <BrowserRouter>
+          <Routes>       
+            <Route path="/" element={<MovieList />} />  
+            <Route path="/movies/:id/" element={<MovieDetails />} />     
+            <Route path="/movies" element={<MovieList />} />
+            <Route path="/new" element={<AddNewMovie />} />
+            <Route path="/edit/:id" element={<EditMovie />} />
+            <Route path="/delete/:id" element={<DeleteMovie />} />
+            <Route path="/successfully" element={<Successfully />} />         
+          </Routes>
+        </BrowserRouter>
+      </MovieProvider>
     </div>
   );
 }

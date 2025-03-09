@@ -1,0 +1,36 @@
+.delete-movie {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.delete-movie h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.delete-movie button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(180, 0, 0);
+   
+}
+.delete-btn:hover {
+    background-color: rgb(180, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.yes-delete {
+    background-color: rgb(0, 142, 0);
+    color: rgb(255, 255, 255);
+}
+
+.cencel-delete {
+    background-color: rgb(180, 0, 0);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,18 @@
+button{
+    cursor: pointer;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #635e5e;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.success{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #115a1c;
+}
