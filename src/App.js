@@ -7,12 +7,14 @@ import AddNewMovie from "./components/AddNewMovie";
 import Successfully from './components/Successfully';
 import EditMovie from "./components/EditMovie";
 import DeleteMovie from "./components/DeleteMovie";
+import DynamicBackground from './components/DynamicBackground';
 
 function App() {
   return (
     <div className="App">
-      <MovieProvider>
+      <MovieProvider>     
         <BrowserRouter>
+        <DynamicBackground /> 
           <Routes>       
             <Route path="/" element={<MovieList />} />  
             <Route path="/movies/:id/" element={<MovieDetails />} />     
@@ -20,7 +22,7 @@ function App() {
             <Route path="/new" element={<AddNewMovie />} />
             <Route path="/edit/:id" element={<EditMovie />} />
             <Route path="/delete/:id" element={<DeleteMovie />} />
-            <Route path="/successfully" element={<Successfully />} />         
+            <Route path="/successfully" element={<Successfully />} />                 
           </Routes>
         </BrowserRouter>
       </MovieProvider>

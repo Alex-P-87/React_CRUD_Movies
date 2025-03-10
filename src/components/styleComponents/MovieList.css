@@ -1,6 +1,10 @@
-body{
-    background-color: rgb(17, 17, 17);
-}
+/* body {
+    background-image: url("./background-images/darkTree.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+} */
+
 .movie-list {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +14,7 @@ body{
 }
 
 .movie-card-list {
-    background-color: #c6c6c6aa;
+    background-color: #c6c6c6c6;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
@@ -25,7 +29,7 @@ body{
 
 .movie-card-list:hover{
     border: 1px solid #3e3e3e;
-    background-color: #ffffffbb;
+    background-color: #ffffffe8;
 }
 
 .movie-card p {
